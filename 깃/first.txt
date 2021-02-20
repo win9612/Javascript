@@ -1,0 +1,9 @@
+[첫 설정]
+
+git init
+
+git remote add origin https://github.com/win9612/Javascript.git
+
+git pull origin master
+
+
