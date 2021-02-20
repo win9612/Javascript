@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        *{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        table,
+        td {
+            border: 1px solid #333;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        thead,
+        tfoot {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>카카오 책 검색 API</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">책 검색 결과</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>책 이름</strong></td>
+                <td id="ti"></td>
+            </tr>
+            <tr>
+                <td><strong>책 저자</strong></td>
+                <td id="at"></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- jquery 가져오기 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- 이 js안에 카카오api 사용예시 넣어놨음-->
+    <script src="kakao_api.js"></script>
+</body>
+
+</html>

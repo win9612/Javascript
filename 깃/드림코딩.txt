@@ -1,0 +1,89 @@
+git config --list
+=> 모든 설정의 상태 확인
+
+git config --global -e
+=>
+
+code .
+=> 현재 위치한 파일에서 vsc 열기
+
+=====
+git config --global user.name = "유저이름"
+=> 유저 이름 설정
+
+git config --global user.email = "유저이메일"
+=> 유저 이메일 설정
+
+git config user.정보
+=> 유저의 해당 정보 확인
+
+=====
+git config --global core.autocrlf true
+=> 윈도우용 줄바꿈 문자열 설정 (맥이면 true -> input)
+
+=====
+*깃의 명령어 기본 형태
+git 명령어 -옵션
+
+[git의 명령어 종류]
+.....
+
+=====
+git init
+=> 해당 폴더 내에서 깃 초기화 및 생성
+
+git status
+=> 해당 깃의 현재 상태 확인
+
+git config --global alias.별명 명령어
+=> 명령어를 별명으로 바꾸어 간편하게 사용
+=> git 별명
+
+git config --h
+=> 깃에서 쓰이는 명령어들 확인
+
+=====
+git add 파일명
+=> 파일을 tracked 상태로 바꾸고 commit할 수 있는 상태로 바꿔놓음
+=> 파일이 이후에 수정되면 다시 add해야 함
+
+git add .
+=> 삭제 등 모든 변경점을 수용하고 전체 파일을 staging area에 놓음
+
+git rm --cached 파일명
+=> 파일을 tracked 상태에서 untracked 상태로 바꿈
+
+git diff
+=> tracked파일들의 변경사항 로그들을 보여줌
+
+git diff --staged
+=> staging area의 파일들까지 포함하여 로그들을 보여줌
+
+git diff --cached
+=> staged와 동일
+
+=====
+echo *.확장자명 > .gitignore
+=> 깃하고 싶지 않은 확장자명을 gitignore에 등록함
+=> 폴더명/ : 폴더 안의 파일들을 등록함
+
+cat 파일명
+=> 해당 파일의 내용을 출력함
+
+=====
+git difftool
+=> vscode를 이용해 변경점 확인하면서 코딩
+
+=====
+[커밋하기]
+git commit
+=> 커밋하기
+
+git commit -m "커밋타이틀명"
+=> 간편하게 커밋하기
+
+git commit -am "커밋타이틀명"
+=> 모든 add된 내용을 커밋
+
+git log
+=> 커밋 로그 확인하기

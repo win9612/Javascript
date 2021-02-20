@@ -1,0 +1,93 @@
+[폼]
+
+* 정의
+ - 사용자가 웹 사이트로 정보를 보낼 수 있는 모든 요소
+ - 저장, 검색, 수정
+ - DB 기반
+ - HTML로 폼의 형태를 만듬
+ - 폼에 입력한 정보를 처리하는 것은 ASP, PHP같은 서버 프로그래밍 이용
+
+<form> ~ </form>
+폼을 만드는 기본 태그.
+여러 폼 요소 삽입
+
+* form 태그의 속성
+"method"
+ - 사용자가 입력한 내용들을 서버로 어떻게 넘겨줄 것인가
+ - get : 주소 표시줄에 사용자가 입력한 내용 그대로 드러남
+ - post : 대부분 사용, 표준 입력으로 넘기기 때문에 길이제한없음
+
+"name"
+ - 폼의 이름 지정
+
+"action"
+ - form 태그 안의 내용을 처리할 서버 프로그램 지정
+
+"target"
+ - action 태그에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정
+
+
+<label> ~ </label>
+폼 요소에 레이블(텍스트)을 붙이는 태그
+
+<filedset> ~ </fieldset>
+폼 요소를 그룹으로 묶는 태그
+
+<legend> ~ </legend>
+그룹으로 묶는 구역에 제목을 붙이는 태그
+
+
+<input>
+사용자가 입력하는 부분
+type에 따라 달라짐
+type의 종류는 표로 참고할것!
+
+
+[input 태그의 다양한 속성]
+
+* autofocus
+페이지를 불러오자마자 원하는 폼 요소에 마우스 커서 표시
+
+* placeholder
+입력란에 표시하는 힌트, 필드 클릭 시 사라짐
+
+* readonly
+내용을 보기만 하고 입력하지 못하게 함
+속성 값 없이 readonly라고만 입력
+
+* required
+필수 필드 체크
+속성 값 없이 required라고만 입력
+
+* min, max, step
+해당 필드의 최솟값, 최댓값, 허용된 범위 내 숫자 간격
+
+* size, minlength, maxlength
+화면에 몇글자까지 보일지, 글자 수 제한
+
+<select> , <optgroup> , <option>
+여러 옵션 중에서 선택
+
+<datalist> , <option>
+데이터 목록에 제시한 값 중에 선택하면 자동입력
+
+<textarea>
+여러 줄의 텍스트 입력 가능한 영역
+=> name, cols, rows
+
+<button>
+버튼 삽입
+(ex) <button type = "submit">버튼</button>
+
+<output>
+계산 결과를 브라우저에 표시
+
+<progress>
+작업 진행 상태를 브라우저에 표시
+(ex) <progress value = "30" max = "100"></progress>
+
+<meter>
+전체 크기 중에서 얼마 차지하는지 표현할 때 사용
+=>low, high, optimum : 현재 상태가 낮은지 높은지 적당한지
+(ex) 하드디스크 사용량, 투표율 등
+(ex) <meter min = "0" max = "100" value = "55"> </meter>
