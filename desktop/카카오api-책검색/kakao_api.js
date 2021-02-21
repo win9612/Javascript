@@ -5,7 +5,7 @@ $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
     data: { query: "유령의 시간" },
-    headers: {Authorization: "KakaoAK b73675efc6eeeef9e22a4d93c0239082"}
+    headers: {Authorization: "KakaoAK ebb361a934f9f42c947b55a2783bd4c1"}
   })
   
   // 응답 api 사용 (msg)
