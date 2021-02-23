@@ -1,0 +1,12 @@
+#btn{
+    display: block;
+}
+
+.txt{
+    display: block;
+    font-size: 20px;
+}
+
+.mt{
+    display: none;
+}

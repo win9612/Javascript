@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+</head>
+<body>
+    <script>
+        // open("https://www.naver.com");
+
+        // 객체 생성 및 사용
+        var now = new Date();
+        document.write(now.toLocaleString() + "<br>");
+        document.write(now.toLocaleDateString()+ "<br>");
+
+        // Math 객체
+        document.write("<br><hr><br>");
+        document.write(Math.ceil(5.5) + "<br>");
+        document.write(Math.floor(5.5)+ "<br>");
+        document.write(Math.random()+ "<br>");
+        document.write(Math.floor(Math.random() * 10 + 1)+ "<br>");  // 1~10 사이의 정수
+
+        // 사용자 정의 객체
+        document.write("<br><hr><br>");
+        var book = {
+            title: "자바스크립트",
+            author: "조민규",
+            price: 15000,
+            info: function(){
+                document.write(this.title + "책의 가격은" + this.price + "원 입니다.<br>");
+            }
+        };
+        document.write(book.title + "<br>");
+        book.info();
+        book.subject = "IT"; // 객체에 새로운 속성 추가
+        
+        // 생성자 함수를 이용해 객체 만들기
+        document.write("<br><hr><br>");
+        class stock{
+            constructor(name, price){
+                this.name = name;
+                this.price = price;
+            }
+            show(){
+                document.write("종목 " + this.name + "의 현재 가격은 " + this.price + "원 입니다.<br>");
+            }
+        }
+        st1 = new stock("SK하이닉스", 140000);
+        st1.show();
+    </script>
+</body>
+</html>
