@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Func</title>
+</head>
+<body>
+    <script>
+        function addNum(){
+            var a = parseInt(prompt("더하기 첫번째 숫자는?"));
+            var b = parseInt(prompt("더하기 두번째 숫자는?"));
+            var result = a + b;
+            document.write("Plus : " + result + "<br>");
+        }
+        addNum();
+        addNum();
+
+        var minusNum = function(){
+            var a = parseInt(prompt("빼기 첫번째 숫자는?"));
+            var b = parseInt(prompt("빼기 두번째 숫자는?"));
+            var result = a - b;
+            document.write("Minus : " + result + "<br>");
+        }
+        minusNum();
+
+        // 함수의 화살표 표기법 (ES6 버전 추가)
+        let printNum = () => {
+            var a = parseInt(prompt("출력할 숫자는?"));
+            document.write("Print : " + a + "<br>");
+        }
+        printNum();
+        
+    </script>
+</body>
+</html>
